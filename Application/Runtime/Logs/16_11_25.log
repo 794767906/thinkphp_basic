@@ -1,0 +1,67 @@
+[ 2016-11-25T09:03:50+08:00 ] 127.0.0.1 /Welcome/check_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.007332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012305s ]
+INFO: [ check_login ] --START--
+INFO: Run Home\Behaviors\User [ RunTime:0.034745s ]
+INFO: [ check_login ] --END-- [ RunTime:0.034915s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\local\git_local\thinkphp_basic\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.129526s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005193s ]
+SQL: SELECT * FROM `admin` WHERE ( `username` = 'admin' ) AND ( `password` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1   [ RunTime:0.000454s ]
+NOTIC: [8] Undefined index: remember C:\local\git_local\thinkphp_basic\Application\Home\Controller\WelcomeController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.029848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029912s ]
+
+[ 2016-11-25T09:03:51+08:00 ] 127.0.0.1 /welcome/admin_index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001459s ]
+INFO: [ check_login ] --START--
+INFO: Run Home\Behaviors\User [ RunTime:0.000969s ]
+INFO: [ check_login ] --END-- [ RunTime:0.001079s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.258296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.258410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.007970s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002807s ]
+
+[ 2016-11-25T09:04:14+08:00 ] 127.0.0.1 /welcome/logout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+INFO: [ check_login ] --START--
+INFO: Run Home\Behaviors\User [ RunTime:0.000783s ]
+INFO: [ check_login ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2016-11-25T09:04:14+08:00 ] 127.0.0.1 /welcome/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+INFO: [ check_login ] --START--
+INFO: Run Home\Behaviors\User [ RunTime:0.000625s ]
+INFO: [ check_login ] --END-- [ RunTime:0.000693s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.049993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
